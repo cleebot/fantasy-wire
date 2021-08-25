@@ -1,132 +1,149 @@
 # fantasy-wire
+- [Overview](#overview)
+- [MVP](#mvp)
+  - [Goals](#goals)
+  - [Libraries and Dependencies](#libraries-and-dependencies)
+  - [Client (Front End)](#client-front-end)
+    - [Wireframes](#wireframes)
+    - [Component Tree](#component-tree)
+    - [Component Architecture](#component-architecture)
+    - [Time Estimates](#time-estimates)
+  - [Server (Back End)](#server-back-end)
+    - [ERD Model](#erd-model)
+- [Post-MVP](#post-mvp)
+- [Code Showcase](#code-showcase)
+- [Code Issues & Resolutions](#code-issues--resolutions)
 
-## Project Description
-This will be a social media forum where users can post and share information with other users, while interacting with eachothers posts and topics.
+<br>
 
-## Wireframes
+## Overview
 
-![image](https://i.imgur.com/06OqHXt.png)
+_**Fantasy Wire** is a blog style website where user's can post relevant news and opinions for fantasy football. 
 
-## Component Hierarchy
+<br>
 
-![image](https://i.imgur.com/MfbA3BK.png)
+## MVP
 
-## API and Data Sample
+> users can create an account
+> users can create/edit/delete articles
+> user authentication so only users can edit or delete articles
+
+
+
+<br>
+
+### Goals
+
+- Become more comfortable with Ruby on Rails
+- Try to integrate a CSS package such as material UI or Tailwind CSS for smoother design
+- Build a seamless full stack project to showcase
+
+
+<br>
+
+### Libraries and Dependencies
+
+
+
+|     Library      | Description                                |
+| :--------------: | :----------------------------------------- |
+|      React       | front-end |
+|   React Router   | front-end routing |
+| Ruby on Rails | back-end |
+|     Axios      | api requests |
+
+
+<br>
+
+### Client (Front End)
+
+#### Wireframes
+
+> Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
+
+![Dummy Link](url)
+
+- Desktop Landing
+
+![Dummy Link](url)
+
+- Desktop Hero
+
+![Dummy Link](url)
+
+- Resource Index
+
+![Dummy Link](url)
+
+- Resource Show
+
+![Dummy Link](url)
+
+- Tablet Resource Index
+
+![Dummy Link](url)
+
+- Mobile Resource Index
+
+#### Component Tree
+
+> Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. Include a link to your component tree
+
+[Component Tree Sample](https://gist.git.generalassemb.ly/davidtwhitlatch/414107e2560ae0bb65e233570f2fe056#file-component-tree-png)
+
+#### Component Architecture
+
+> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
+
+``` structure
+
+src
+|__ assets/
+      |__ fonts
+      |__ graphics
+      |__ images
+      |__ mockups
+|__ components/
+      |__ Header.jsx
+|__ services/
+
 ```
-const UserSchema = new Schema (
-{ 
-  username: { type: String, required: true, unique: true },
-  email: { type: String, required: true , trim: true, unique: true },
-  passwordDigest: { type: String, required: true, select: false },
-  posts: { type: Schema.Types.ObjectID, ref: "Post", required: true },
-  threads: { type: Schema.Types.ObjectID, ref: "Thread", required: true }
-    
-},
-{timestamps: true},
-)
 
-const ThreadSchema = new Schema (
-{ 
-  title: { type: String, required: true },
-  body: { type: String, required: true },
-  imgUrl: { type: String, required: false },
-  userID: { type: Schema.Types.ObjectID, ref: "User", required: true },
-  posts: { type: Schema.Types.ObjectID, ref: "Post", required: true }
-    
-},
-{timestamps: true},
-)
+#### Time Estimates
 
-const PostSchema = new Schema (
-{ 
-  body: { type: String, required: true },
-  imgUrl: { type: String, required: false },
-  userID: { type: Schema.Types.ObjectID, ref: "User", required: true },
-  threadID: { type: Schema.Types.ObjectID, ref: "Thread", required: true }
-    
-},
-{timestamps: true},
-)
- ```
-    
-### MVP/PostMVP
+> Use this section to estimate the time necessary to build out each of the components you've described above.
 
-#### MVP
+| Task                | Priority | Estimated Time | Time Invested | Actual Time |
+| ------------------- | :------: | :------------: | :-----------: | :---------: |
+| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
+| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
 
-- Homepage Display
-- Login and Log Out
-- CRUD Posts
-- CRUD Threads
-- User Authentication
-- Media Query
-- Heroku & Netlify Deploy
+> _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
 
+<br>
 
-#### PostMVP
+### Server (Back End)
 
-- User Profile
-- Direct Message Feature
-- User Authorization
+#### ERD Model
 
+> Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
 
-## Team Expectations
+[ERD Sample](https://drive.google.com/file/d/1kLyQTZqfcA4jjKWQexfEkG2UspyclK8Q/view)
+<br>
 
-https://docs.google.com/document/d/1c72iVv7Hm1qJ0E8E0LnE5yhzbRI21jbyYjcZPmOaquA/edit?usp=sharing
+***
 
-## Project Schedule
+## Post-MVP
 
-|  Day | Deliverable | Status
-|---|---| ---|
-|July 30| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
-|August 1| Meet-up Before Approval | Complete
-|August 2| Project Approval | Complete
-|August 2| Core Application Structure (HTML, Tim, etc.) | Complete
-|August 3| Pseudocode / actual code | Complete
-|August 4| Initial Clickable Model | Incomplete
-|August 5| MVP | Incomplete
-|August 6-9| Post MVP | Incomplete
-|August 10| Presentations | Incomplete
+> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
 
-## Timeframes
+***
 
-| Component | Priority | Estimated Time | Time Invested | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| Boilerplate Setup & Installs | H | 2hrs | 2hrs | |
-| Client & Services Setup | H | 2hrs| | |
-| Views Arrangement | H | 3hrs | | |
-| Components Build | H | 2hrs | | |
-| Front End Routing | H | 3hrs | | |
-| Models Construction | H | 1hr | | |
-| DB Initialization | H | 2hrs | | |
-| Routes & Controllers | H | 3hrs | | |
-| User Tests | H | 3hrs | | |
-| CRUD Posts | H | 3hrs | | |
-| CSS Homepage | H | 2hrs | | |
-| CSS Buttons & Links | H | 1hr | | |
-| CSS Threads | H | 2hrs | | |
-| CSS Posts | H | 2hrs | | |
-| CSS User Profile | H | 2hrs | | |
-| Media-Query Homepage | H | 2hrs | | |
-| Media-Query Threads | H | 2hrs | | |
-| Media-Query Posts | H | 2hrs | | |
-| Media-Query User Profile | H | 2hrs | | |
-| React App Clean | M | 2hrs | | |
-| User Profile Display | M | 2hrs | | |
-| DM Feature | M | 3hrs | | |
-| User Authentication | H | 3hrs | | |
-| Deploying to Heroku | H | 2hrs | | |
-| Netlify Deploy | H | 2hrs | | |
-| Clickalbe Walk-Through | H | 2hrs | | |
-| Presentation Prep | H | 2hrs | | |
-| Total | | 61hrs | | |
+## Code Showcase
 
-## SWOT Analysis
+> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
 
-### Strengths:
-We have a good balance of skills in the team.
-### Weaknesses:
-Working in a group for the first time will be a challenge but communication will be key.
-### Opportunities:
-It will be a good experience with co-coding and working with multiple branchs, etc in Github.
-### Threats:
-If communication is poor, the team will suffer.
+## Code Issues & Resolutions
+
+> Use this section to list of all major issues encountered and their resolution.
