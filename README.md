@@ -89,6 +89,8 @@ https://whimsical.com/fantasy-wireframe-A4SFk1bRjgZzyvAk2x37ZZ
 
 - Edit Article Page
 
+![image](https://imgur.com/lB25EDf.png)
+
 #### Component Tree
 
 ![image](https://imgur.com/tAOKBty.png)
@@ -127,6 +129,8 @@ src
           |__ SignIn.jsx
       |__ Register/
           |__ Register.jsx
+      |__ Categories/
+          |__ Categories.jsx    
 |__ services/
       |__ apiConfig.js
       |__ users.js
