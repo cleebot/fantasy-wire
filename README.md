@@ -117,24 +117,21 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+| Backend Authorization |    H     |     3 hrs      |     TBD       |     TBD     |
+| Backend modeling |    H     |     1.5 hrs      |     TBD       |     TBD     |
+| Seed Data |    H     |     2 hrs      |     TBD       |     TBD     |
+| Backend CRUD |    H     |     3 hrs      |     TBD       |     TBD     |
+| Frontend Component Hiearchy |    H     |     3 hrs      |     TBD       |     TBD     |
+| Frontend Routing |    H     |     3 hrs      |     TBD       |     TBD     |
+| State Relationship between pages |    H     |     3 hrs      |     TBD       |     TBD     |
+| Form creation for sign in/signup |    H     |     2 hrs      |     TBD       |     TBD     |
+| Form creation for article posts |    H     |     2 hrs      |     TBD       |     TBD     |
+| Home page layout |    H     |     3 hrs      |     TBD       |     TBD     |
+| Edit page layout |    H     |     3 hrs      |     TBD       |     TBD     |
+| Basic CSS |    H     |     3 hrs      |     TBD       |     TBD     |
+| Advanced CSS for home page |    H     |     3 hrs      |     TBD       |     TBD     |
+| CSS for form pages |    H     |     3 hrs      |     TBD       |     TBD     |
+| TOTAL               |          |     39.5 hrs     |     TBD       |     TBD     |
 
 
 
