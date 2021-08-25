@@ -81,15 +81,17 @@ https://whimsical.com/fantasy-wireframe-A4SFk1bRjgZzyvAk2x37ZZ
 
 - Article Page
 
-![image](https://imgur.com/45zob2G.png)
+![image](https://imgur.com/OgYF57s.png)
 
 - Create Article Page
 
-![image](https://imgur.com/PhC8DJJ.png)
+![image](https://imgur.com/6qrU0g3.png)
 
 - Edit Article Page
 
-![image](https://imgur.com/lB25EDf.png)
+![image](https://imgur.com/4N7sdhO.png)
+
+- Categories Page
 
 #### Component Tree
 
