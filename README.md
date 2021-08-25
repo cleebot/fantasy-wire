@@ -99,15 +99,52 @@ https://whimsical.com/fantasy-wireframe-A4SFk1bRjgZzyvAk2x37ZZ
 
 ``` structure
 
+
 src
+|__ App.jsx
+|__ index.js
 |__ assets/
-      |__ fonts
-      |__ graphics
-      |__ images
-      |__ mockups
 |__ components/
-      |__ Header.jsx
+      |__ Layout/
+          |__ Layout.jsx
+          |__ Layout.css
+      |__ Nav/
+          |__ Nav.jsx
+          |__ Nav.css
+      |__ Footer/
+          |__ Footer.jsx
+          |__ Footer.css
+      |__ Sort/
+          |__ Sort.jsx
+          |__ Sort.css
+|__ screens/
+      |__ Home/
+          |__ Home.jsx
+          |__ Home.css
+      |__ Articles/
+          |__ Articles.jsx
+          |__ Articles.css
+      |__ ArticleEdit/
+          |__ ArticleEdit.jsx
+          |__ ArticleEdit.css
+      |__ ArticleCreate/
+          |__ ArticleCreate.jsx
+          |__ ArticleCreate.css
+      |__ SignIn/
+          |__ SignIn.jsx
+          |__ SignIn.css
+      |__ Register/
+          |__ Register.jsx
+          |__ Register.css
 |__ services/
+      |__ apiConfig.js
+      |__ users.js
+      |__ articles.js
+      |__ categories.js
+|__ utilities/
+      |__ utilities.js
+
+
 
 ```
 
@@ -152,6 +189,7 @@ src
 - Add a comments section for articles
 - Let users save favorite articles
 - streamline application for mobile users
+- Add a searchbar to lookup specific players
 
 ***
 
