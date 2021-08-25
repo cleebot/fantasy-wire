@@ -18,15 +18,15 @@
 
 ## Overview
 
-_**Fantasy Wire** is a blog style website where user's can post relevant news and opinions for fantasy football. 
+**Fantasy Wire** is a blog style website where user's can post relevant news and opinions for fantasy football. 
 
 <br>
 
 ## MVP
 
-> users can create an account
-> users can create/edit/delete articles
-> user authentication so only users can edit or delete articles
+- users can create an account
+- users can create/edit/delete articles
+- user authentication so only users can edit or delete articles
 
 
 
@@ -127,9 +127,8 @@ src
 
 #### ERD Model
 
-> Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
+![image](https://imgur.com/a/G51LHeX)
 
-[ERD Sample](https://drive.google.com/file/d/1kLyQTZqfcA4jjKWQexfEkG2UspyclK8Q/view)
 <br>
 
 ***
