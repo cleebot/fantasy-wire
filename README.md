@@ -93,7 +93,7 @@ https://whimsical.com/fantasy-wireframe-A4SFk1bRjgZzyvAk2x37ZZ
 
 #### Component Tree
 
-![image](https://imgur.com/tAOKBty.png)
+![image](https://imgur.com/mrRmjhn.png)
 
 #### Component Architecture
 
