@@ -77,19 +77,19 @@ https://whimsical.com/fantasy-wireframe-A4SFk1bRjgZzyvAk2x37ZZ
 
 - Sign Up
 
-![image](https://imgur.com/IMGECF7.png)
+![image](https://imgur.com/OgYF57s.png)
 
 - Article Page
 
-![image](https://imgur.com/OgYF57s.png)
+![image](https://imgur.com/6qrU0g3.png)
 
 - Create Article Page
 
-![image](https://imgur.com/6qrU0g3.png)
+![image](https://imgur.com/4N7sdhO.png)
 
 - Edit Article Page
 
-![image](https://imgur.com/4N7sdhO.png)
+![image](https://imgur.com/lB25EDf.png)
 
 - Categories Page
 
