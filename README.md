@@ -95,7 +95,6 @@ https://whimsical.com/fantasy-wireframe-A4SFk1bRjgZzyvAk2x37ZZ
 
 #### Component Architecture
 
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
 
 ``` structure
 
