@@ -1,5 +1,6 @@
 class ArticlesController < ApplicationController
-  before_action :set_article, only: [:show, :update, :destroy]
+  before_action :set_article, only: [:show]
+  before_action :authorize_request, only: [:create, :update, :destroy]
 
   # GET /articles
   def index
@@ -10,15 +11,15 @@ class ArticlesController < ApplicationController
 
   # GET /articles/1
   def show
-    render json: @article
+    render json: @article, include: :categories
   end
 
   # POST /articles
   def create
     @article = Article.new(article_params)
-
+    @article.user = @current_user
     if @article.save
-      render json: @article, status: :created, location: @article
+      render json: @article, status: :created
     else
       render json: @article.errors, status: :unprocessable_entity
     end
@@ -32,7 +33,6 @@ class ArticlesController < ApplicationController
       render json: @article.errors, status: :unprocessable_entity
     end
   end
-
   # DELETE /articles/1
   def destroy
     @article.destroy
