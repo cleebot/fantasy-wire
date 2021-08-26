@@ -1,11 +1,14 @@
 class CategoriesController < ApplicationController
-  before_action :set_category, only: [:show, :update, :destroy]
-
+  before_action :set_category, only: [:show]
   # GET /categories
   def index
     @categories = Category.all
 
     render json: @categories
+  end
+
+  def show
+    render json: @category
   end
 
   def add_to_category
