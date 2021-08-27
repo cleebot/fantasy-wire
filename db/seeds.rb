@@ -14,19 +14,36 @@ User.destroy_all
   User.create!(
     username: 'elijah',
     email: 'elijah@elijah.com',
-    passowrd: '123456'
+    password: '123456'
   )
 @ziyad =
   User.create!(
     username: 'ziyad',
     email: 'ziyad@ziyad.com',
-    passowrd: '123456'
+    password: '123456'
   )
 @aleks =
   User.create!(
     username: 'aleks',
     email: 'aleks@aleks.com',
-    passowrd: '123456'
+    password: '123456'
   )
 
-puts
+puts "#{User.count} users created."
+
+@quarterback = Category.create!(name: 'quarterback')
+@runningback = Category.create!(name: 'runningback')
+@widereceiver = Category.create!(name: 'widereceiver')
+@tightend = Category.create!(name: 'tightend')
+
+@format = [@quarterback, @runningback, @widereceiver, @tightend]
+
+puts "#{Category.count} categories created."
+
+Article.create!(
+  title: 'top rb',
+  content: '<p>cmc will be number 1</p>',
+  img_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJUsUyl4RUmjSSapiotUal9yC7VT2J55lvrw&usqp=CAU',
+  @user: @aleks,
+  categories: [@runningback]
+  )
