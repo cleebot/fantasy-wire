@@ -11,16 +11,16 @@ export default function SignIn(props) {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prevState => ({
+    setFormData((prevState) => ({
       ...prevState,
-      [name]: value
-    }))
-  }
+      [name]: value,
+    }));
+  };
 
   return (
-    <div>
-      <form onSubmit={(e) => {
-        e.preventRegister();
+    <form
+      onSubmit={(e) => {
+        e.preventDefault();
         handleLogin(formData);
       }}>
         <h3>Login</h3>
@@ -38,10 +38,10 @@ export default function SignIn(props) {
             type='password'
             name='password'
             value={formData.password}
-            onChange={handleChange}/>
-        </label>
-        <button>Submit</button>
+          onChange={handleChange} />
+      </label>
+      <button>Submit</button>
+      <Link to='/register'>Register</Link>
       </form>
-    </div>
   )
 }
