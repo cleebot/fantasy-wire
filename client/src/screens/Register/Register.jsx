@@ -18,7 +18,6 @@ export default function Register(props) {
   };
 
   return (
-    <div>
       <form onSubmit={(e) => {
         e.preventDefault();
         handleRegister(formData);
@@ -50,6 +49,5 @@ export default function Register(props) {
         </label>
         <button>Submit</button>
       </form>
-    </div>
   )
 }
