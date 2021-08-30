@@ -22,7 +22,8 @@ export default function SignIn(props) {
       onSubmit={(e) => {
         e.preventDefault();
         handleLogin(formData);
-      }}>
+      }}
+    >
         <h3>Login</h3>
         <label>
           Username:
