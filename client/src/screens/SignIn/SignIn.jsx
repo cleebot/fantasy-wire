@@ -5,7 +5,7 @@ import { useState } from 'react';
 export default function SignIn(props) {
   const [formData, setFormData] = useState({
     username: '',
-    password: ''
+    password: '',
   })
   const { handleLogin } = props;
 
