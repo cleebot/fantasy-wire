@@ -16,7 +16,7 @@ export const postArticle = async (articleData) => {
 }
 
 export const putArticle = async (id, articleData) => {
-  const res = await api.put(`/articles/${id}`, { food: foodData })
+  const res = await api.put(`/articles/${id}`, { article: articleData })
   return res.data
 }
 
