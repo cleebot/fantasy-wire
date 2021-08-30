@@ -34,6 +34,7 @@ class ArticlesController < ApplicationController
     end
   end
   # DELETE /articles/1
+  
   def destroy
     @article.destroy
   end
