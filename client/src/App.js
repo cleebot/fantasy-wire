@@ -45,11 +45,10 @@ function App() {
 
   return (
     <div className="App">
-      <Layout currentUser={currentUser} handleLogout={handleLogout}>>
+      <Layout currentUser={currentUser} handleLogout={handleLogout}>
     <Switch>
         <Route path='/signin'><SignIn handleLogin={handleLogin} /></Route>
-        <Route path='/signup'><Register /></Route>
-        <Route path='/'></Route>
+          <Route path='/signup'><Register handleRegister={handleRegister} /></Route>
         <Route path='/'>
             <MainContainer currentUser={currentUser} />
           </Route>

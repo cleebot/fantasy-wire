@@ -42,7 +42,7 @@ export default function SignIn(props) {
           onChange={handleChange} />
       </label>
       <button>Submit</button>
-      <Link to='/register'>Register</Link>
+      <Link to='/signup'>Register</Link>
       </form>
   )
 }

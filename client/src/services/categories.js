@@ -1,4 +1,4 @@
-import api from "./apiConfig;"
+import api from "./apiConfig";
 
 export const getAllCategories = async () => {
   const res = await api.get("/categories");
