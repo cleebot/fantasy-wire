@@ -7,6 +7,7 @@ import ArticleEdit from "../screens/ArticleEdit/ArticleEdit";
 import { getAllArticles, postArticle, putArticle, deleteArticle } from '../services/articles';
 import { getAllCategories } from '../services/categories';
 import Categories from "../screens/Categories/Categories";
+import Articles from "../screens/Articles/Articles";
 
 
 
@@ -71,7 +72,7 @@ export default function MainContainer(props) {
           <ArticleDetail categories={categories} />
         </Route>
         <Route path='/articles'>
-          <articles
+          <Articles
             articles={articles}
             handleDelete={handleDelete}
             currentUser={currentUser}
