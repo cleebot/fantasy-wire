@@ -11,15 +11,13 @@ export default function Articles(props) {
         <div key={article.id}>
           <Link to={`/articles/${article.id}`}>
             <p>{article.title}</p>
-          </Link>
-          {currentUser?.id === article.user_id && (
+          </Link>   
             <div>
               <Link to={`/articles/${article.id}/edit`}>
                 <button>Edit</button>
               </Link>
               <button onClick={() => handleDelete(article.id)}>Delete</button>
-          </div>
-          )}
+          </div>          
           </div>
       )
       )}

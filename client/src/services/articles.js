@@ -21,6 +21,6 @@ export const putArticle = async (id, articleData) => {
 }
 
 export const deleteArticle = async (id) => {
-  const res = await api.delete(`/foods/${id}`);
+  const res = await api.delete(`/articles/${id}`);
   return res
 }

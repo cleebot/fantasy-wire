@@ -14,23 +14,26 @@ export default function ArticleEdit(props) {
   useEffect(() => {
     const prefillFormData = () => {
       const articleItem = articles.find((article) => article.id === Number(id));
-      setFormData({ title: articleItem.title })
-    }
+      setFormData({
+        title: articleItem.title,
+        content: articleItem.content,
+        img_url: articleItem.img_url,
+      })
+    };
     if (articles.length) {
       prefillFormData()
     }
   }, [articles, id])
   
   const handleChange = (e) => {
-    const { title, value } = e.target;
+    const { name, value } = e.target;
     setFormData(prevState => ({
       ...prevState,
-      [title]: value
+      [name]: value
     }))
   }
 
   return (
-    <div>
       <form onSubmit={(e) => {
         e.preventDefault();
         handleUpdate(id, formData)
@@ -49,7 +52,7 @@ export default function ArticleEdit(props) {
           <input
             type='text'
             name='content'
-            value={FormData.content}
+            value={formData.content}
             onChange={handleChange}
           />
         </label>
@@ -58,12 +61,11 @@ export default function ArticleEdit(props) {
           <input
             type='text'
             name='img_url'
-            value={FormData.img_url}
+            value={formData.img_url}
             onChange={handleChange}
             />
         </label>
+        <button>Submit</button>
       </form>
-      
-    </div>
   )
 }

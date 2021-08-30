@@ -34,7 +34,7 @@ export default function MainContainer(props) {
     fetchCategories();
   }, []);
 
-  const handleCreate = async (id, formData) => {
+  const handleCreate = async (formData) => {
     const articleData = await postArticle(formData);
     setArticles((prevState) => [...prevState, articleData]);
     history.push('/articles');
@@ -66,7 +66,7 @@ export default function MainContainer(props) {
           <ArticleEdit articles={articles} handleUpdate={handleUpdate} />
         </Route>
         <Route path='/articles/new'>
-          <ArticleCreate handleCreate={handleCreate} />
+          <ArticleCreate handleCreate={handleCreate} categories={categories} />
         </Route>
         <Route path='/articles/:id'>
           <ArticleDetail categories={categories} />
