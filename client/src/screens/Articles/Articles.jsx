@@ -15,7 +15,7 @@ export default function Articles(props) {
         <div className="w-80 bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl hover:scale-105 duration-500 transform transition cursor-pointer">
         <div key={article.id}>
           <Link to={`/articles/${article.id}`}>
-          <img className="mx-auto" src={`${article.img_url}`}
+          <img className="w-full h-auto" src={`${article.img_url}`}
       alt={`${article.name}`}
         />
             <p className="text-1xl font-bold text-gray-600">{article.title}</p>
