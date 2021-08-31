@@ -40,12 +40,4 @@ puts "#{User.count} users created."
 
 puts "#{Category.count} categories created."
 
-Article.create!(
-  title: 'top rb',
-  content: '<p>cmc will be number 1</p>',
-  img_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJUsUyl4RUmjSSapiotUal9yC7VT2J55lvrw&usqp=CAU',
-  user: @aleks,
-  category: @runningback
-)
 
-puts "#{Article.count} articles created."
