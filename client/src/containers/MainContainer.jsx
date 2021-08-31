@@ -55,7 +55,6 @@ export default function MainContainer(props) {
 
   return (
     <div>
-      <h1>main container</h1>
       <Switch>
       <Route path='/categories'>
           <Categories categories={categories} />
