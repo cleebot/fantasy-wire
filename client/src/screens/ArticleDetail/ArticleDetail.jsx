@@ -31,7 +31,7 @@ export default function ArticleDetail(props) {
   return (
     <div className="min-h-screen flex items-center justify-center">
       <div className="w-80 bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl hover:scale-105 duration-500 transform transition cursor-pointer">
-      <img className="mx-auto" src={`${articleItem?.img_url}`}
+      <img className="w-full" src={`${articleItem?.img_url}`}
       alt={`${articleItem?.name}`}
         />
         <h1 className="text-2xl font-bold text-gray-600">{articleItem?.title}</h1>
