@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-  before_action :set_article, only: [:show]
+  before_action :set_article, only: [:show, :destroy, :update]
   before_action :authorize_request, only: [:create, :update, :destroy]
 
   # GET /articles
@@ -11,7 +11,7 @@ class ArticlesController < ApplicationController
 
   # GET /articles/1
   def show
-    render json: @article, include: :categories
+    render json: @article
   end
 
   # POST /articles
@@ -34,6 +34,7 @@ class ArticlesController < ApplicationController
     end
   end
   # DELETE /articles/1
+  
   def destroy
     @article.destroy
   end
@@ -46,6 +47,6 @@ class ArticlesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def article_params
-      params.require(:article).permit(:title, :content, :img_url, :user_id, :category_id)
+      params.require(:article).permit(:title, :content, :img_url, :category_id)
     end
 end
