@@ -6,7 +6,6 @@ export default function Articles(props) {
 
   return (
     <div>
-      <h3>Articles</h3>
       <Link to='/articles/new'>
         <button>Create an Article!</button>
       </Link>
