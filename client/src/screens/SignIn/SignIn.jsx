@@ -47,7 +47,9 @@ export default function SignIn(props) {
           onChange={handleChange} />
       </label>
             <button type="submit"
-            className="w-full text-center py-3 rounded bg-green text-black hover:bg-green-dark focus:outline-none my-1">Submit</button>
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Submit</button>
+            <br />
+            <br />
       <Link to='/signup'>Register</Link>
           </form>
           </div>

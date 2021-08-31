@@ -63,9 +63,11 @@ export default function ArticleCreate(props) {
                 <option key={cat.id} name='category' value={Number(cat.id)}>{cat.name}</option>
               )
             })}
-          </select>
+            </select>
+            <br />
+            <br />
       <button type="submit"
-      class="w-full text-center py-3 rounded bg-green text-black hover:bg-green-dark focus:outline-none my-1">Submit</button>
+      className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Submit</button>
           </form>
         </div>
       </div>
