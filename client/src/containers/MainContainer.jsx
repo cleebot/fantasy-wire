@@ -10,8 +10,6 @@ import Categories from "../screens/Categories/Categories";
 import Articles from "../screens/Articles/Articles";
 
 
-
-
 export default function MainContainer(props) {
   const [articles, setArticles] = useState([]);
   const [categories, setCategories] = useState([]);
@@ -47,7 +45,7 @@ export default function MainContainer(props) {
         return article.id === Number(id) ? articleData : article;
       })
     );
-    history.push('/articles');
+    history.push(/articles/);
   };
 
   const handleDelete = async (id) => {

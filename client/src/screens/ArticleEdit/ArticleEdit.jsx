@@ -8,7 +8,9 @@ export default function ArticleEdit(props) {
     content: '',
     img_url: '',
   })
-  const { articles, handleUpdate } = props;
+
+  const { title, content, img_url, category_id } = formData;
+  const { articles, handleUpdate, categories } = props;
   const { id } = useParams();
 
   useEffect(() => {
@@ -30,8 +32,8 @@ export default function ArticleEdit(props) {
     setFormData(prevState => ({
       ...prevState,
       [name]: value
-    }))
-  }
+    }));
+  };
 
   return (
       <form onSubmit={(e) => {
@@ -65,6 +67,14 @@ export default function ArticleEdit(props) {
             onChange={handleChange}
             />
         </label>
+        {/* <select onChange={handleChange} name="category_id" value={category_id}>
+            <option value="category">Category</option>
+            {categories.map((cat) => {
+              return (
+                <option key={cat.id} name='category' value={Number(cat.id)}>{cat.name}</option>
+              )
+            })}
+          </select> */}
         <button>Submit</button>
       </form>
   )

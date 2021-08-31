@@ -30,7 +30,9 @@ export default function ArticleDetail(props) {
 
   return (
     <div>
-      <h3>{article?.title}</h3>
+      <h3>Name: {article?.title}</h3>
+      <h4>Content: {article?.content}</h4>
+      <h5>Image URL: {article?.img_url}</h5>
     </div>
   )
 }
