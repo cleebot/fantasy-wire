@@ -29,12 +29,14 @@ export default function ArticleDetail(props) {
   // };
 
   return (
-    <div>
-      <h3>Name: {articleItem?.title}</h3>
-      <h4>Content: {articleItem?.content}</h4>
-      <img className='articleimg' src={`${articleItem?.img_url}`}
+    <div class="min-h-screen bg-gray-100 flex items-center justify-center">
+      <div class=" w-80 bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl hover:scale-105 duration-500 transform transition cursor-pointer">
+      <img class="mx-auto" src={`${articleItem?.img_url}`}
       alt={`${articleItem?.name}`}
         />
+        <h1 class="text-2xl font-bold text-gray-600">{articleItem?.title}</h1>
+      <p class="mt-2 text-lg font-semibold text-gray-600">{articleItem?.content}</p>
+        </div>
     </div>
   )
 }
