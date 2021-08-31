@@ -32,7 +32,9 @@ export default function ArticleDetail(props) {
     <div>
       <h3>Name: {articleItem?.title}</h3>
       <h4>Content: {articleItem?.content}</h4>
-      <h5>Image URL: {articleItem?.img_url}</h5>
+      <img className='articleimg' src={`${articleItem?.img_url}`}
+      alt={`${articleItem?.name}`}
+        />
     </div>
   )
 }
