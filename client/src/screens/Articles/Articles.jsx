@@ -21,7 +21,7 @@ export default function Articles(props) {
           </Link>   
             <div>
               <Link to={`/articles/${article.id}/edit`}>
-                <button>Edit</button>
+                <button className="mr-4">Edit</button>
               </Link>
               <button onClick={() => handleDelete(article.id)}>Delete</button>
           </div>
