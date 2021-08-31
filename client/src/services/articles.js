@@ -1,26 +1,26 @@
 import api from "./apiConfig";
 
 export const getAllArticles = async () => {
-  const res = await api.get("/articles");
-  return res.data
+  const resp = await api.get("/articles");
+  return resp.data
 };
 
 export const getArticle = async (id) => {
-  const res = await api.get(`/articles/${id}`);
-  return res.data
+  const resp = await api.get(`/articles/${id}`);
+  return resp.data
 }
 
 export const postArticle = async (articleData) => {
-  const res = await api.post("/articles", { article: articleData });
-  return res.data;
+  const resp = await api.post("/articles", { article: articleData });
+  return resp.data;
 }
 
 export const putArticle = async (id, articleData) => {
-  const res = await api.put(`/articles/${id}`, { article: articleData })
-  return res.data
+  const resp = await api.put(`/articles/${id}`, { article: articleData })
+  return resp.data
 }
 
 export const deleteArticle = async (id) => {
-  const res = await api.delete(`/articles/${id}`);
-  return res
+  const resp = await api.delete(`/articles/${id}`);
+  return resp
 }
