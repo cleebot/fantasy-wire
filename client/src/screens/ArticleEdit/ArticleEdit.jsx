@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { putArticle } from '../../services/articles';
+// import { putArticle } from '../../services/articles';
 
 export default function ArticleEdit(props) {
-  const [articleItem, setArticleItem] = useState();
-  const [category, setCategory] = useState('');
+  // const [articleItem, setArticleItem] = useState();
+  // const [category, setCategory] = useState('');
   const [formData, setFormData] = useState({
     title: '',
     content: '',
@@ -12,8 +12,8 @@ export default function ArticleEdit(props) {
     category_id: '',
   })
 
-  const { title, content, img_url, category_id } = formData;
-  const { articles, handleUpdate, categories } = props;
+  // const { title, content, img_url, category_id } = formData;
+  const { articles, handleUpdate } = props;
   const { id } = useParams();
 
   useEffect(() => {
@@ -29,13 +29,13 @@ export default function ArticleEdit(props) {
     if (articles.length) {
       prefillFormData()
     }
-  }, [articles])
+  }, [articles, id])
   
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const articleItem = await putArticle(id, category)
-    setArticleItem(articleItem)
-  }
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   const articleItem = await putArticle(id, category)
+  //   setArticleItem(articleItem)
+  // }
 
   const handleChange = (e) => {
     const { name, value } = e.target;
