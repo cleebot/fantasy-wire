@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import Footer from "../Footer/Footer";
+// import Footer from "../Footer/Footer";
 // import Nav from '../Nav/Nav';
 
 
@@ -23,7 +23,6 @@ export default function Layout(props) {
         )
           }
           <br />
-          <br />
         {currentUser && (
           <div>
         <Link to='/articles'>Articles</Link>
@@ -32,6 +31,7 @@ export default function Layout(props) {
       {props.children}
       </div>
     </header>
+    <footer></footer>
     </div>
   )
 }

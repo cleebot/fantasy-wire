@@ -1,12 +1,15 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-// import { getAllArticles } from '../../services/articles';
+import { putArticle } from '../../services/articles';
 
 export default function ArticleEdit(props) {
+  const [articleItem, setArticleItem] = useState();
+  const [category, setCategory] = useState('');
   const [formData, setFormData] = useState({
     title: '',
     content: '',
     img_url: '',
+    category_id: '',
   })
 
   const { title, content, img_url, category_id } = formData;
@@ -15,19 +18,25 @@ export default function ArticleEdit(props) {
 
   useEffect(() => {
     const prefillFormData = () => {
-      const articleItem = articles.find((article) => article.id === Number(id));
+      const articleItem = articles.find((article) => article?.id === Number(id));
       setFormData({
         title: articleItem.title,
         content: articleItem.content,
         img_url: articleItem.img_url,
-        // categories: articleItem.category_id
+        categories: articleItem.category_id,
       })
     };
     if (articles.length) {
       prefillFormData()
     }
-  }, [articles, id])
+  }, [articles])
   
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const articleItem = await putArticle(id, category)
+    setArticleItem(articleItem)
+  }
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prevState => ({
@@ -75,16 +84,17 @@ export default function ArticleEdit(props) {
             onChange={handleChange}
             />
         </label>
-        {/* <select onChange={handleChange} name="category_id" value={category_id}>
+        <button type="submit"
+      className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Submit</button>
+          </form>
+          {/* <select onChange={handleChange} name="category_id" value={category_id}>
             <option value="category">Category</option>
             {categories.map((cat) => {
               return (
                 <option key={cat.id} name='category' value={Number(cat.id)}>{cat.name}</option>
               )
-            })} */}
-          {/* </select> */}
-        <button>Submit</button>
-          </form>
+            })}
+            </select> */}
         </div>
       </div>
       </div>

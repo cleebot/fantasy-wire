@@ -5,6 +5,7 @@ export default function ArticleCreate(props) {
     title: '',
     content: '',
     img_url: '',
+    category_id: '',
   });
 
   const { title, content, img_url, category_id } = formData;

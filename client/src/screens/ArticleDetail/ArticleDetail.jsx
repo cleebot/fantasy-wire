@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function ArticleDetail(props) {
   const [articleItem, setArticleItem] = useState(null);
-  // const [category, setCategory] = useState('');
+  const [category, setCategory] = useState('');
   const { id } = useParams();
 
   useEffect(() => {
@@ -33,7 +33,7 @@ export default function ArticleDetail(props) {
       <img className="w-full" src={`${articleItem?.img_url}`}
       alt={`${articleItem?.name}`}
         />
-        <h1>{articleItem?.category_id}</h1>
+        <h1>{category?.name}</h1>
         <h1 className="text-2xl font-bold text-gray-600">{articleItem?.title}</h1>
       <p className="mt-2 text-lg font-semibold text-gray-600">{articleItem?.content}</p>   
             <div>
