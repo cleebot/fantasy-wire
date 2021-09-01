@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 
 export default function ArticleDetail(props) {
   const [articleItem, setArticleItem] = useState(null);
-  // const [category] = useState('');
   const { id } = useParams();
 
   useEffect(() => {
@@ -16,16 +15,6 @@ export default function ArticleDetail(props) {
     fetchArticleItem();
   }, [id]);
 
-  // const handleChange = (e) => {
-  //   const { value } = e.target;
-  //   setCategory(value);
-  // };
-
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   const article = await addCategorytoArticle(id, category);
-  //   setArticle(article);
-  // };
 
   return (
     <div className="min-h-screen flex items-center justify-center">

@@ -1,13 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import Footer from "../Footer/Footer";
-// import Nav from '../Nav/Nav';
 
 
 export default function Layout(props) {
   const { currentUser, handleLogout } = props;
   return (
-    // <Nav />
     <div>
     <nav>
     <Link to='/'>Fantasy Wire</Link>

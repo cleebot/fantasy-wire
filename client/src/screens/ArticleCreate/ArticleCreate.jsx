@@ -10,7 +10,7 @@ export default function ArticleCreate(props) {
 
   const { title, content, img_url, category_id } = formData;
   const { handleCreate, categories } = props;
-//deconstruct categories
+
   
   const handleChange = (e) => {
     const { name, value } = e.target;

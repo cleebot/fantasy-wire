@@ -117,8 +117,6 @@ src
       |__ Sort/
           |__ Sort.jsx
 |__ screens/
-      |__ Home/
-          |__ Home.jsx
       |__ Articles/
           |__ Articles.jsx
       |__ ArticleEdit/
@@ -138,8 +136,6 @@ src
       |__ users.js
       |__ articles.js
       |__ categories.js
-|__ utilities/
-      |__ utilities.js
 
 
 
@@ -184,6 +180,7 @@ src
 ## Post-MVP
 
 - Add a comments section for articles
+- filter articles by category
 - Let users save favorite articles
 - streamline application for mobile users
 - Add a searchbar to lookup specific players

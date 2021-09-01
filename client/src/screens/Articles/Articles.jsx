@@ -30,9 +30,6 @@ export default function Articles(props) {
       )
         )}
         </div>
-      {/* <Link to='/articles/new'>
-        <button>Create</button>
-      </Link> */}
     </div>
   )
 }
