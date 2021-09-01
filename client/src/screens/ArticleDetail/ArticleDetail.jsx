@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function ArticleDetail(props) {
   const [articleItem, setArticleItem] = useState(null);
-  const [category, setCategory] = useState('');
+  const [category] = useState('');
   const { id } = useParams();
 
   useEffect(() => {
