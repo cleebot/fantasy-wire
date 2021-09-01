@@ -1,0 +1,12 @@
+.footer {
+  bottom: 0;
+  position: fixed;
+  margin-top: auto;
+  justify-content: center;
+  align-content: flex-end;
+  display: flex;
+  height: 50px;
+  width: 100vw;
+  font-size: 20px;
+  margin: 5px;
+}

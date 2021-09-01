@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-// import Footer from "../Footer/Footer";
+import Footer from "../Footer/Footer";
 // import Nav from '../Nav/Nav';
 
 
@@ -9,7 +9,7 @@ export default function Layout(props) {
   return (
     // <Nav />
     <div>
-    <header>
+    <nav>
     <Link to='/'>Fantasy Wire</Link>
       <div>
       {
@@ -30,8 +30,8 @@ export default function Layout(props) {
         )}
       {props.children}
       </div>
-    </header>
-    <footer></footer>
+    </nav>
+    <Footer />
     </div>
   )
 }
