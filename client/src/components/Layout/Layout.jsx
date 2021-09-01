@@ -1,30 +1,37 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import Footer from "../Footer/Footer";
+// import Nav from '../Nav/Nav';
 
 
 export default function Layout(props) {
   const { currentUser, handleLogout } = props;
   return (
+    // <Nav />
+    <div>
     <header>
-      <h1>Fantasy Wire</h1>
+    <Link to='/'>Fantasy Wire</Link>
+      <div>
       {
         currentUser ? (
           <div>
-            <p>{currentUser.username}</p>
+            <p>Welcome, {currentUser.username}</p>
             <button onClick={handleLogout}>Logout</button>
           </div>
         ) : (
             <Link to='/signin'>Sign In</Link>
         )
-      }
-      <hr />
+          }
+          <br />
+          <br />
         {currentUser && (
           <div>
         <Link to='/articles'>Articles</Link>
       </div>
         )}
       {props.children}
+      </div>
     </header>
+    </div>
   )
 }
