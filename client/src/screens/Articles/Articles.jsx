@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 export default function Articles(props) {
 
-  const { articles, handleDelete, currentUser } = props;
+  const { articles, handleDelete } = props;
 
   return (
     <div>

@@ -74,14 +74,14 @@ export default function ArticleEdit(props) {
             onChange={handleChange}
             />
         </label>
-        {/* <select onChange={handleChange} name="category_id" value={category_id}>
+        <select onChange={handleChange} name="category_id" value={category_id}>
             <option value="category">Category</option>
             {categories.map((cat) => {
               return (
                 <option key={cat.id} name='category' value={Number(cat.id)}>{cat.name}</option>
               )
             })}
-          </select> */}
+          </select>
         <button>Submit</button>
           </form>
         </div>
