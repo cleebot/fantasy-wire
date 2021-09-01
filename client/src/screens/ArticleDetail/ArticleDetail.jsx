@@ -5,9 +5,9 @@ import { addCategorytoArticle } from "../../services/categories";
 
 export default function ArticleDetail(props) {
   const [articleItem, setArticleItem] = useState(null);
-  // const [category, setCategory] = useState('');
+  const [category, setCategory] = useState('');
   const { id } = useParams();
-  const { categories } = props;
+  const { categories, category_id } = props;
 
   useEffect(() => {
     const fetchArticleItem = async () => {
@@ -17,10 +17,10 @@ export default function ArticleDetail(props) {
     fetchArticleItem();
   }, [id]);
 
-  // const handleChange = (e) => {
-  //   const { value } = e.target;
-  //   setCategory(value);
-  // };
+  const handleChange = (e) => {
+    const { value } = e.target;
+    setCategory(value);
+  };
 
   // const handleSubmit = async (e) => {
   //   e.preventDefault();
@@ -34,6 +34,7 @@ export default function ArticleDetail(props) {
       <img className="w-full" src={`${articleItem?.img_url}`}
       alt={`${articleItem?.name}`}
         />
+        <h1>{articleItem?.category_id}</h1>
         <h1 className="text-2xl font-bold text-gray-600">{articleItem?.title}</h1>
       <p className="mt-2 text-lg font-semibold text-gray-600">{articleItem?.content}</p>
         </div>
