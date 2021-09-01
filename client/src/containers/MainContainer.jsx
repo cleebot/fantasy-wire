@@ -45,7 +45,7 @@ export default function MainContainer(props) {
         return article.id === Number(id) ? articleData : article;
       })
     );
-    history.push(/articles/);
+    history.push('/articles/');
   };
 
   const handleDelete = async (id) => {
