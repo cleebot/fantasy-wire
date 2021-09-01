@@ -1,13 +1,12 @@
 import { useState, useEffect } from "react";
 import { useParams } from 'react-router-dom';
 import { getArticle } from "../../services/articles";
-import { addCategorytoArticle } from "../../services/categories";
+import { Link } from "react-router-dom";
 
 export default function ArticleDetail(props) {
   const [articleItem, setArticleItem] = useState(null);
   const [category, setCategory] = useState('');
   const { id } = useParams();
-  const { categories, category_id } = props;
 
   useEffect(() => {
     const fetchArticleItem = async () => {
@@ -36,8 +35,13 @@ export default function ArticleDetail(props) {
         />
         <h1>{articleItem?.category_id}</h1>
         <h1 className="text-2xl font-bold text-gray-600">{articleItem?.title}</h1>
-      <p className="mt-2 text-lg font-semibold text-gray-600">{articleItem?.content}</p>
-        </div>
+      <p className="mt-2 text-lg font-semibold text-gray-600">{articleItem?.content}</p>   
+            <div>
+              <Link to={`/articles/${articleItem?.id}/edit`}>
+                <button className="mr-4 text-gray-600">Edit</button>
+              </Link>
+      </div>
+      </div>
     </div>
   )
 }
