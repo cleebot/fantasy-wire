@@ -19,7 +19,7 @@
 ## Overview
 
 **Fantasy Wire** is a blog style website for fantasy football. Users can post relevant news and opinions for fantasy football. 
-
+https://awesome-darwin-335df1.netlify.app/
 <br>
 
 ## MVP
@@ -145,23 +145,23 @@ src
 
 > Use this section to estimate the time necessary to build out each of the components you've described above.
 
-| Task                | Priority | Estimated Time | Time Invested | Actual Time |
-| ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Backend Authorization |    H     |     3 hrs      |     TBD       |     TBD     |
-| Backend modeling |    H     |     1.5 hrs      |     TBD       |     TBD     |
-| Seed Data |    H     |     2 hrs      |     TBD       |     TBD     |
-| Backend CRUD |    H     |     3 hrs      |     TBD       |     TBD     |
-| Frontend Component Hiearchy |    H     |     3 hrs      |     TBD       |     TBD     |
-| Frontend Routing |    H     |     3 hrs      |     TBD       |     TBD     |
-| State Relationship between pages |    H     |     3 hrs      |     TBD       |     TBD     |
-| Form creation for sign in/signup |    H     |     2 hrs      |     TBD       |     TBD     |
-| Form creation for article posts |    H     |     2 hrs      |     TBD       |     TBD     |
-| Home page layout |    H     |     3 hrs      |     TBD       |     TBD     |
-| Edit page layout |    H     |     3 hrs      |     TBD       |     TBD     |
-| Basic CSS |    H     |     3 hrs      |     TBD       |     TBD     |
-| Advanced CSS for home page |    H     |     3 hrs      |     TBD       |     TBD     |
-| CSS for form pages |    H     |     3 hrs      |     TBD       |     TBD     |
-| TOTAL               |          |     39.5 hrs     |     TBD       |     TBD     |
+| Task                | Priority | Estimated Time | Time Invested |
+| ------------------- | :------: | :------------: | :-----------: | 
+| Backend Authorization |    H     |     3 hrs      |    3 hrs       |
+| Backend modeling |    H     |     1.5 hrs      |     1.5 hrs       |
+| Seed Data |    H     |     2 hrs      |     2 hrs       |
+| Backend CRUD |    H     |     3 hrs      |     3 hrs       |
+| Frontend Component Hiearchy |    H     |     3 hrs      |     3 hrs       |
+| Frontend Routing |    H     |     3 hrs      |     3 hrs     |
+| State Relationship between pages |    H     |     3 hrs      |     6 hrs       | 
+| Form creation for sign in/signup |    H     |     2 hrs      |    3 hrs       | 
+| Form creation for article posts |    H     |     2 hrs      |     2 hrs       |
+| Home page layout |    H     |     3 hrs      |     3 hrs       |
+| Edit page layout |    H     |     3 hrs      |     3 hrs       |
+| Basic CSS |    H     |     3 hrs      |    3 hrs       |
+| Advanced CSS for home page |    H     |     3 hrs      |     3 hrs      |
+| CSS for form pages |    H     |     3 hrs      |    3 hrs      |
+| TOTAL               |          |     39.5 hrs     |    41.5      | 
 
 
 
